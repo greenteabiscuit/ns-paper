@@ -1,2 +1,4 @@
 ieicej3.3/*/out/*
 *.pdf
+!waveguide.pdf
+!directivity.pdf
