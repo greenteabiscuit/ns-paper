@@ -12,6 +12,8 @@
 \usepackage[varg]{newtxmath}% % 英数字フォントの設定を変更しないでください
 \usepackage{latexsym}
 %\usepackage{amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\graphicspath{ {./img/} }
 
 \setcounter{page}{1}
 
@@ -111,6 +113,32 @@ MIMOなどを実装し、ビームフォーミングを可能にすることで�
 \section{関連技術}
 
 \subsection{既存の伝送媒体}
+
+ミリ波の伝送媒体には主に以下が利用される。
+\begin{itemize}
+  \item 導波管
+  \item 同軸ケーブル
+  \item 誘電体導波路
+\end{itemize}
+
+導波管は誘電体または空気の周囲を導体で囲んだ断面形状をもち、衛星地球局で利用される。
+ただ容易に曲げることができず、重いという制約がある。
+同軸ケーブルは中心導体と外部導体が同心円状に配置された断面形状をもち、
+おもにマイクロ波以下の周波数帯で利用される。
+こちらは高周波数帯での損失が導波管よりも高いという制約があります。
+
+誘電体導波路は棒状の誘電体の周囲を異なる誘電率を有する誘電体で囲んだ構造を持ち、
+高周波数帯電波の伝送のために使われることが多い
+導波管と同軸ケーブルを足して２で割ったような特徴を持ち、
+損失は発生するが、同軸ケーブルよりは低い上、軽くて柔軟に曲げることができる。
+
+\begin{figure}
+  \begin{center}    
+    \includegraphics[clip, keepaspectratio, width=0.5\linewidth]{img/waveguide.png}
+    \caption{誘電体導波路}
+    \label{fig:metal_waveguide}
+  \end{center}
+\end{figure}
 
 \section{提案手法}
 
