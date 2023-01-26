@@ -2,3 +2,7 @@ ieicej3.3/*/out/*
 *.pdf
 !waveguide.pdf
 !directivity.pdf
+*.xbb
+!cone.pdf
+!dome.pdf
+!normal.pdf
