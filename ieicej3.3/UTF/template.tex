@@ -120,7 +120,11 @@ NTT Docomoによる曲がるアンテナ
 この現象を利用すれば誘電体導波路を曲げずともエリア構築が可能となる上、
 洗濯ばさみのような物質でエリア構築ができる手軽さがある。
 
-
+本研究では、シミュレーションを用いて
+誘電体導波路の最適な形状を割り出し、
+それをもとに誘電体導波路アンテナの製作を行う。
+製作したアンテナの反射率と指向性を測定し、
+セキュリティへの有用性を確認する。
 
 本論文の構成は次の通りである.次章では,本研究
 に関連する技術について述べる.第3章,第4章では,
@@ -162,6 +166,33 @@ NTT Docomoによる曲がるアンテナ
   \end{center}
 \end{figure}
 
+\subsection{誘電体導波路の先端から出る高分解能ビーム}
+
+本研究では、予備実験にて誘電体導波路の先端から
+高分解能ビームが出ていることを確認している。
+予備実験では動画の送受信システムを60 GHz帯で構築し、
+60GHz の電波の送信機は銅板で囲って電波を遮断した上で
+実際に導波路を動かしたり、力を加えたりして特徴を探すことを行った。
+
+その結果、
+導波路の先端から高指向性のビーム状の電波が放出されることがわかった。
+図\ref{fig:qualitative_experiment}
+のように60GHzの動画送受信システムにおいて、
+受信機に向けているときには動画は再生され、
+ちょっとでも下に向けているときには動画が再生されない
+現象を見つけることができた。
+
+\begin{figure*}[t]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 630.087950 152.271255, width=1.0\linewidth]{img/qualitative_experiment.pdf}
+    \caption{誘電体導波路の予備実験}
+    \label{fig:qualitative_experiment}
+  \end{center}
+\end{figure*}
+
+
 \section{提案手法}
 
 本研究では電波伝播の直進性や急激な減衰を利活用した
@@ -202,6 +233,7 @@ NTT Docomoによる曲がるアンテナ
 \begin{figure}[tb]
   %\capwidth=60mm
   %\ecapwidth=60mm
+  \vspace{20mm}
   \begin{center}
     \includegraphics[bb=0 0 384 262, width=0.7\linewidth]{img/usecase.pdf}
     \caption{天井から各ブースへ高分解能ミリ波を提供}
@@ -294,7 +326,7 @@ NTT Docomoによる曲がるアンテナ
 シートに力を加えたりすることでエリアが構築することが考えられ、
 一次元のときに比べてユースケースが広がる。
 
-\subsection{Local 5G環境での使用}
+\subsection{Local5G環境での使用}
 
 今回は電波暗室の遮断された環境で測定を行った。
 実際にLocal5Gなどの環境では外部要因が多いため、
