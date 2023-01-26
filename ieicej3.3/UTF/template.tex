@@ -185,6 +185,26 @@ NTT Docomoによる曲がるアンテナ
   \end{center}
 \end{figure}
 
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0.000000 0.000000 593.264305 791.019074, width=0.5\linewidth]{img/metallic_waveguide.pdf}
+    \caption{金属導波管}
+    \label{fig:metallic_waveguide}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0.000000 0.000000 593.264305 791.019074, width=0.5\linewidth]{img/sma_cables.pdf}
+    \caption{同軸ケーブル}
+    \label{fig:sma_cables}
+  \end{center}
+\end{figure}
+
 本研究で用いる導波路は、内側誘電体を比誘電率2.1とした
 ポリテトラフルオロエチレン（PTFE）、
 外側誘電体を比誘電率ほぼ1.00の空気としたものとなる。
@@ -412,7 +432,19 @@ $\arctan 0.5 / 2 = 14^{\circ}$の狭いビームを出す導波路を製作す�
 
 \subsection{半径10mm、長さ50mmの導波路アンテナ}
 
+まずは半径10mm、長さ50mmの誘電体導波路アンテナを
+WR28の同軸導波管変換器に挿入し、
+反射率と透過率をネットワークアナライザにて測定した。
+図\ref{fig:s11_comparison}にて、反射率は
+24GHzの時に最小となっており、導波路がないときとほぼ
+変わらない損失となっている。
 
+また、透過率においては受信側と導波路の先端を
+100mmと200mm離した上で測定をした。
+受信側のアンテナはMZ-mmAnt1を利用しており、
+結果が\ref{fig:s21_comparison}に表示されている。
+透過率は誘電体導波路を使うことで高くなっていることが見られ、
+改善がされていることがわかる。
 
 \begin{figure}[tb]
   %\capwidth=60mm
