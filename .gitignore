@@ -7,3 +7,4 @@ ieicej3.3/*/out/*
 !dome.pdf
 !normal.pdf
 *.png
+!ieicej3.3/UTF/img/*.pdf

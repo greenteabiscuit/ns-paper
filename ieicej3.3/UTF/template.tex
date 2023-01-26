@@ -195,11 +195,17 @@ NTT Docomoによる曲がるアンテナ
 高分解能ビームが出ていることを確認している。
 予備実験では動画の送受信システムを60 GHz帯で構築し、
 市販のSHARP社製無線HDMI（High-Definition Multimedia
-Interface）送受信ユニット（VR-WH1）を用いた．
-主な無線仕様を表\ref{table:wireless}に示す
-60GHzの電波の送信機を銅板で囲って電波を遮断した上で
-導波路をアンテナ代わりに使う調査実験を行った。
+Interface）送受信ユニット（VR-WH1）を用いた。
+主な無線仕様を表\ref{table:wireless}に示す。
+本ユニットは。60GHz
+帯を使用するWireless HD規格の無線送受信ユニッ
+トで構成される。送信機は60GHz帯の広帯域幅
+（1.76GHz）を使用し、入力されたHDMI信号を電波
+に変換して送信し、受信機は受信電波からHDMI信
+号を生成する。
 
+送信機を銅板で囲って電波を遮断した上で
+導波路をアンテナ代わりに使う調査実験を行った。
 実際に導波路を動かしたり、力を加えることで特徴を探したところ、
 導波路の先端から高指向性のビーム状の電波が放出されることがわかった。
 図\ref{fig:qualitative_experiment}
@@ -404,7 +410,45 @@ $\arctan 0.5 / 2 = 14^{\circ}$の狭いビームを出す導波路を製作す�
 
 製作したアンテナについてはSパラメータと指向性を測定した。
 
-電波暗室にて測定した誘電体導波路アンテナの結果は以下となる。
+\subsection{半径10mm、長さ50mmの導波路アンテナ}
+
+
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 288.000000 384.000000, width=0.5\linewidth]{img/50mm_10mm.pdf}
+    \caption{アナライザでの測定}
+    \label{fig:measurement_analyzer}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 432.098422 288.065615, width=1.0\linewidth]{img/s11_comparison.pdf}
+    \caption{S11の比較}
+    \label{fig:s11_comparison}
+  \end{center}
+\end{figure}
+
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 432.098422 288.065615, width=1.0\linewidth]{img/s21_comparison.pdf}
+    \caption{S21の比較}
+    \label{fig:s21_comparison}
+  \end{center}
+\end{figure}
+
+
+
+% todo add results
+% todo add diagram of how it was measured
 
 \section{今後の展望}
 
