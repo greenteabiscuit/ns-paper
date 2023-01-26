@@ -103,6 +103,9 @@ MIMOなどを実装し、ビームフォーミングを可能にすることで�
 ホーンアンテナなどの機器は一度配置してしまうと場所を変えにくいため、
 設計などに気を付けなければならない。
 
+本論文の関連研究としてはまず、
+NTT Docomoによる曲がるアンテナ\cite[text]{Fukuda} \cite[text]{Bech}
+
 本論文の構成は次の通りである.次章では,本研究
 に関連する技術について述べる.第3章,第4章では,
 システム概要を示した提案手法と実際の実装について
@@ -156,6 +159,15 @@ MIMOなどを実装し、ビームフォーミングを可能にすることで�
 \section{結果と評価}
 
 \section{今後の展望}
+
+\subsection{異なる形状での利用の検討}
+
+今回は1次元のPTFEの誘電体導波路の棒に注目して設計と製作を行ったが、
+二次元形状であるPTFEのシートを使うことも検討に入れたい。
+シートに力を加えたりすることでエリアが構築することが考えられ、
+一次元のときに比べてユースケースが広がる。
+
+\subsection{}
 
 \section{結論}
 
@@ -359,7 +371,13 @@ MIMOなどを実装し、ビームフォーミングを可能にすることで�
 %\bibliographystyle{sieicej}
 %\bibliography{myrefs}
 \begin{thebibliography}{99}% 文献数が10未満の時 {9}
-\bibitem{}
+\bibitem{Fukuda}
+leaky_wave_antenna_bent_dielectric,  author={Fukuda, Atsushi and Kawai, Kunihiro and Okazaki, Hiroshi and Suzuki, Yasunori},  booktitle={2020 IEEE International Symposium on Radio-Frequency Integration Technology (RFIT)},   title={Experimental Study of Leaky-wave Antenna Employing Bent Dielectric Waveguide for Millimeter Wave Communication},   year={2020},  volume={},  number={},  pages={199-201},  doi={10.1109/RFIT49453.2020.9226244}
+
+\bibitem{Bech}
+S. von Bechtolsheim, \TeX\ in Practice, 
+Springer-Verlag, New York, 1993. 
+
 \end{thebibliography}
 
 \end{document}
