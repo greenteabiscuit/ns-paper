@@ -13,6 +13,7 @@
 \usepackage{latexsym}
 %\usepackage{amssymb}
 \usepackage[dvipdfmx]{graphicx}
+\bibliographystyle{sieicej}
 \graphicspath{ {./img/} }
 
 \setcounter{page}{1}
@@ -104,7 +105,7 @@ MIMOなどを実装し、ビームフォーミングを可能にすることで�
 設計などに気を付けなければならない。
 
 本論文の関連研究としてはまず、
-NTT Docomoによる曲がるアンテナ\cite[text]{Fukuda} \cite[text]{Bech}
+NTT Docomoによる曲がるアンテナ\cite{6840353} \cite{5723725}
 
 本論文の構成は次の通りである.次章では,本研究
 に関連する技術について述べる.第3章,第4章では,
@@ -370,14 +371,6 @@ NTT Docomoによる曲がるアンテナ\cite[text]{Fukuda} \cite[text]{Bech}
 
 %\bibliographystyle{sieicej}
 %\bibliography{myrefs}
-\begin{thebibliography}{99}% 文献数が10未満の時 {9}
-\bibitem{Fukuda}
-leaky_wave_antenna_bent_dielectric,  author={Fukuda, Atsushi and Kawai, Kunihiro and Okazaki, Hiroshi and Suzuki, Yasunori},  booktitle={2020 IEEE International Symposium on Radio-Frequency Integration Technology (RFIT)},   title={Experimental Study of Leaky-wave Antenna Employing Bent Dielectric Waveguide for Millimeter Wave Communication},   year={2020},  volume={},  number={},  pages={199-201},  doi={10.1109/RFIT49453.2020.9226244}
-
-\bibitem{Bech}
-S. von Bechtolsheim, \TeX\ in Practice, 
-Springer-Verlag, New York, 1993. 
-
-\end{thebibliography}
+\bibliography{common_bibliography}
 
 \end{document}
