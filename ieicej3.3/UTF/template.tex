@@ -320,6 +320,7 @@ Interface）送受信ユニット（VR-WH1）を用いた。
 導波路の理想となる半値幅の仕様は天井からの高さとブース同士の距離
 から逆算すれば調整が可能となるため、
 場所によって変わる分解能の要件にも柔軟に対応可能である。
+要件は三角関数を使って容易に計算が可能で、
 例えば図のように1mおきに狭いブースが並んでいる場合は
 $\arctan 0.5 / 2 = 14^{\circ}$の狭いビームを出す導波路を製作する、
 などと調整も可能である。
@@ -450,16 +451,6 @@ WR28の同軸導波管変換器に挿入し、
   %\capwidth=60mm
   %\ecapwidth=60mm
   \begin{center}
-    \includegraphics[bb=0 0 288.000000 384.000000, width=0.5\linewidth]{img/50mm_10mm.pdf}
-    \caption{アナライザでの測定}
-    \label{fig:measurement_analyzer}
-  \end{center}
-\end{figure}
-
-\begin{figure}[tb]
-  %\capwidth=60mm
-  %\ecapwidth=60mm
-  \begin{center}
     \includegraphics[bb=0 0 432.098422 288.065615, width=1.0\linewidth]{img/s11_comparison.pdf}
     \caption{S11の比較}
     \label{fig:s11_comparison}
@@ -476,6 +467,43 @@ WR28の同軸導波管変換器に挿入し、
     \label{fig:s21_comparison}
   \end{center}
 \end{figure}
+
+\subsection{異なる長さの誘電体導波路の指向性}
+
+20cm、30cm、40cmの長さの誘電体導波路を使って
+指向性を測定した結果について説明する。
+誘電体導波路の先端を回転の中心とした上で、
+電波暗室の中で回転させて指向性を測定する。
+
+長さ20cmの誘電体導波路の縦偏波、横偏波の結果は
+それぞれ以下となる。
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 408 430, width=1.0\linewidth]{img/waveguide-20cm-h.pdf}
+    \caption{20cm長のH偏波}
+    \label{fig:20cm-h}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 408 430, width=1.0\linewidth]{img/waveguide-20cm-v.pdf}
+    \caption{20cm長のV偏波}
+    \label{fig:20cm-v}
+  \end{center}
+\end{figure}
+
+
+同じ長さでの比較を行うと、垂直偏波においては大きな差分は見られないが
+水平偏波についてはばらつきが見られる。
+垂直偏波は全体的に左右対称で丸い波形になっているが、
+水平偏波は左右にゆがんだ波形が見られる。
+このゆがみの差はフランジ内の導波路の芯と変換器の芯が一致していないことが理由と考えられる。
 
 
 
