@@ -405,11 +405,11 @@ $2 * \arctan 0.5 / 2 = 28^{\circ}$の方向にのみ電波を放射する導波�
 \section{導波路アンテナの試作}
 
 最も加工が簡単な先端裁断型の導波路アンテナの試作を行った。
-図todoに製作した導波路アンテナの写真を示す。
+図\ref{fig:docomo_antenna}に製作した導波路アンテナの写真を示す。
 また、測定器側のインターフェースとなる同軸ケーブルへ低損失で接続するための
 モード変換器も試作した。
 まず、試作アンテナへの電波の給電状態を示す反射特性を測定した。
-測定結果を図todoに示す。
+測定結果を図\ref{fig:reflection_params}に示す。
 アンテナへの給電を考えた場合、
 反射特性として-10 dB以下を目標としており、
 該当周波数にて目標を達成していることを確認した。
@@ -419,7 +419,7 @@ $2 * \arctan 0.5 / 2 = 28^{\circ}$の方向にのみ電波を放射する導波�
 測定は電波暗室内で導波路をその先端を中心として回転させ、
 対向側のアンテナで受信した電力を測定した。
 図todo, todoに周波数$27GHz$から$29GHz$で$0.5 GHz$刻みの指向特性であり、
-図11は導波路長が20cm、図12は40cmの結果である。導波路長を変えても、
+図todoは導波路長が20cm、図todoは40cmの結果である。導波路長を変えても、
 指向特性に大きな変化は見られなかった。
 放射利得が最大利得の半分となる角度範囲を示す半値角はともに36°であった。
 したがって、導波路を引き回しても同一先端形状であれば同一指向性が得られ、
@@ -427,6 +427,26 @@ $2 * \arctan 0.5 / 2 = 28^{\circ}$の方向にのみ電波を放射する導波�
 また、先に述べたユースケースで必要とされる半値角の計算値は28°であることから、
 目的の指向性に近い値が得られていることが分かった。
 図9より先端をドーム型とすることでより高い指向性が得られる可能性がある。
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 408 430, width=0.9\linewidth]{img/reflection_params.pdf}
+    \caption{反射特性}
+    \label{fig:reflection_params}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tb]
+  %\capwidth=60mm
+  %\ecapwidth=60mm
+  \begin{center}
+    \includegraphics[bb=0 0 408 430, width=0.9\linewidth]{img/docomo_antenna.pdf}
+    \caption{試作アンテナ}
+    \label{fig:docomo_antenna}
+  \end{center}
+\end{figure}
 
 \begin{figure}[tb]
   %\capwidth=60mm
